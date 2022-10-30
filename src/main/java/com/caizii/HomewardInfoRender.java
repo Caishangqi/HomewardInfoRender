@@ -5,6 +5,8 @@ import com.caizi.utils.logs.ConsoleLogger;
 import com.caizi.utils.logs.CustomLogger;
 import com.caizi.utils.logs.LoggerManipulationType;
 import com.caizii.command.MainCommand;
+import com.comphenix.protocol.ProtocolLibrary;
+import com.comphenix.protocol.ProtocolManager;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,6 +20,8 @@ public final class HomewardInfoRender extends JavaPlugin {
     public static FileConfiguration config;
 
     public static CommandManager commandManager;
+
+    private static ProtocolManager protocolManager;
 
     private static String pluginPrefix = "&6HInfo &f| ";
 
@@ -55,6 +59,8 @@ public final class HomewardInfoRender extends JavaPlugin {
         consoleLogger = new ConsoleLogger(pluginPrefix);
         customLogger = new CustomLogger(pluginPrefix);
         consoleLogger.send(LoggerManipulationType.LOAD,"正在初始化 " +this.getName()+ " 的必要组件");
+        //初始化ProtocolLib
+        protocolManager = ProtocolLibrary.getProtocolManager();
     }
 
     public static HomewardInfoRender getInstance() {
