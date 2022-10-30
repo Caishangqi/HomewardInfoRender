@@ -29,11 +29,11 @@ Homeward 插件的信息插件，以模块化展示你配置的信息，兼容�
 
 ## 协调系列 Homeward Species
 
-| [Homeward Cooking 协调烹饪](https://github.com/Caishangqi/homeward-plugin-cooking) | Caishangqi     | 1.18.2 |
-|--------------------------------------------------------------------------------|----------------|--------|
-| **[Homeward Brewing 协调酿造](https://github.com/Ba1oretto/Brewing)**              | **Ba1oretto**  | **1.18.2** |
-| **[Homeward Libs 协调核心](https://github.com/Caishangqi/homeward-plugin-lib)**                 | **Caishangqi** | **1.18.2** |
-| **[Homeward InfoRender 协调渲染](https://github.com/Caishangqi/HomewardInfoRender)** | **Caishangqi** | **1.19.2** |
+| **[Homeward Cooking 协调烹饪](https://github.com/Caishangqi/homeward-plugin-cooking)** | Caishangqi     | 1.18.2 |
+|------------------------------------------------------------------------------------|----------------|--------|
+| **[Homeward Brewing 协调酿造](https://github.com/Ba1oretto/Brewing)**                  | **Ba1oretto**  | **1.18.2** |
+| **[Homeward Libs 协调核心](https://github.com/Caishangqi/homeward-plugin-lib)**        | **Caishangqi** | **1.18.2** |
+| **[Homeward InfoRender 协调渲染](https://github.com/Caishangqi/HomewardInfoRender)**   | **Caishangqi** | **1.19.2** |
 
 ## 特别说明 Special Information
 

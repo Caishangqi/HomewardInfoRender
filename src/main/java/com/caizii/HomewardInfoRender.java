@@ -1,4 +1,4 @@
-package com.caizii.homewardinforender;
+package com.caizii;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

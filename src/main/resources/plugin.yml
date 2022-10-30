@@ -1,8 +1,8 @@
 name: HomewardInfoRender
 version: '${version}'
-main: com.caizii.homewardinforender.HomewardInfoRender
+main: com.caizii.HomewardInfoRender
 api-version: 1.19
 prefix: HInfo
 authors: [Caizii]
-description: A plugin that integrate many infomation display components, including aethetic bossbar etc.
+description: A plugin that integrate many information display components, including aesthetic boss-bar etc.
 website: www.caizii.com
