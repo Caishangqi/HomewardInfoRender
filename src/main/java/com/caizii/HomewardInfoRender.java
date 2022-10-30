@@ -21,7 +21,7 @@ public final class HomewardInfoRender extends JavaPlugin {
 
     public static CommandManager commandManager;
 
-    private static ProtocolManager protocolManager;
+    public static ProtocolManager protocolManager;
 
     private static String pluginPrefix = "&6HInfo &f| ";
 
