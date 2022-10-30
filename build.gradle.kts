@@ -31,6 +31,12 @@ repositories {
         name = "placeholderapi"
         url = uri("https://repo.extendedclip.com/content/repositories/placeholderapi/")
     }
+
+    maven{
+        name = "protocolLib"
+        url = uri("https://repo.dmulloy2.net/repository/public/")
+    }
+
 }
 
 dependencies {
@@ -41,6 +47,7 @@ dependencies {
     compileOnly("org.spigotmc:spigot-api:1.19.2-R0.1-SNAPSHOT")
     compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     compileOnly("me.clip:placeholderapi:2.11.2")
+    compileOnly("com.comphenix.protocol","ProtocolLib","5.0.0")
 
     compileOnly(fileTree("libs/compile"))
 
