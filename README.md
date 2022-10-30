@@ -6,7 +6,7 @@
 
 <h4 align="center">复写所有原有的信息展示插件，以模块化配置文件按照条件展示信息给玩家</h4>
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/caishangqi/homeward-webstorebridge/overview/plugin-webstore-bridge"><img src="https://www.codefactor.io/repository/github/caishangqi/homeward-webstorebridge/badge/plugin-webstore-bridge" alt="CodeFactor" /></a>
+<a href="https://www.codefactor.io/repository/github/caishangqi/homewardinforender/overview/homewardinforender"><img src="https://www.codefactor.io/repository/github/caishangqi/homeward-webstorebridge/badge/plugin-webstore-bridge" alt="CodeFactor" /></a>
 <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Caishangqi/HomewardInfoRender">
 <img alt="Lines of code" src="https://img.shields.io/badge/paper-1.19.2-green">
 <img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/Caishangqi/HomewardInfoRender/master?label=build">
@@ -29,8 +29,8 @@ Homeward 插件的信息插件，以模块化展示你配置的信息，兼容�
 
 ## 协调系列 Homeward Species
 
-| **[Homeward Cooking 协调烹饪](https://github.com/Caishangqi/homeward-plugin-cooking)** | Caishangqi     | 1.18.2 |
-|------------------------------------------------------------------------------------|----------------|--------|
+| **[Homeward Cooking 协调烹饪](https://github.com/Caishangqi/homeward-plugin-cooking)** | **Caishangqi** | 1.18.2     |
+|------------------------------------------------------------------------------------|----------------|------------|
 | **[Homeward Brewing 协调酿造](https://github.com/Ba1oretto/Brewing)**                  | **Ba1oretto**  | **1.18.2** |
 | **[Homeward Libs 协调核心](https://github.com/Caishangqi/homeward-plugin-lib)**        | **Caishangqi** | **1.18.2** |
 | **[Homeward InfoRender 协调渲染](https://github.com/Caishangqi/HomewardInfoRender)**   | **Caishangqi** | **1.19.2** |

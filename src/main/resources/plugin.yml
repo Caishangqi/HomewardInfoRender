@@ -6,3 +6,8 @@ prefix: HInfo
 authors: [Caizii]
 description: A plugin that integrate many information display components, including aesthetic boss-bar etc.
 website: www.caizii.com
+depend:
+  - HomewardLib
+  - ProtocolLib
+softdepend:
+  - PlaceholderAPI

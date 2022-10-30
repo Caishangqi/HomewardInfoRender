@@ -42,6 +42,8 @@ dependencies {
     compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     compileOnly("me.clip:placeholderapi:2.11.2")
 
+    compileOnly(fileTree("libs/compile"))
+
 
     testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.8.2")
     testImplementation("org.junit.jupiter", "junit-jupiter-engine", "5.8.2")
