@@ -13,6 +13,8 @@ import com.comphenix.protocol.events.PacketAdapter;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.events.PacketEvent;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -59,9 +61,44 @@ public final class HomewardInfoRender extends JavaPlugin {
                 double z = packet.getDoubles().read(2);
 
                 boolean isOnGround = packet.getBooleans().read(0);
-                customLogger.send("INBOUND PACKET: x = " + x + "y = " + y + " z = " + z + "isOnGround() = " + isOnGround, player);
+                //customLogger.send("INBOUND PACKET: x = " + x + "y = " + y + " z = " + z + "isOnGround() = " + isOnGround, player);
 
             }
+        });
+
+        //服务器给客户端发送包的监听
+        protocolManager.addPacketListener(new PacketAdapter(this, PacketType.Play.Server.REL_ENTITY_MOVE) {
+
+            @Override
+            public void onPacketSending(PacketEvent event) {
+                PacketContainer packet = event.getPacket();
+                Player player = event.getPlayer();
+                Short x = packet.getShorts().read(0);
+                Short y = packet.getShorts().read(1);
+                Short z = packet.getShorts().read(2);
+                int entityID = packet.getIntegers().read(0);
+
+
+                Entity entity = protocolManager.getEntityFromID(player.getWorld(), entityID);
+                entity.teleport(player.getLocation());
+
+                if (entity instanceof LivingEntity e) {
+                    e.setHealth(0);
+                }
+
+                customLogger.send("INBOUND PACKET: x = " + x + "y = " + y + " z = " + z, player);
+            }
+
+        });
+
+        protocolManager.addPacketListener(new PacketAdapter(this,PacketType.Play.Client.CHAT) {
+
+
+            @Override
+            public void onPacketReceiving(PacketEvent event) {
+                event.setCancelled(true);
+            }
+
         });
 
 
