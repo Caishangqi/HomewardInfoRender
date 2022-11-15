@@ -1,0 +1,12 @@
+# 模块名称
+module-name: mvPlaceIndicator
+# 模块展示的内容
+module-content: "%PlaceHolder%"
+# 模块位置 x坐标为第几行bossbar y坐标为第几个
+module-position: [1,2] # 这意味这第一行bossbar的第二个模块
+# 模块优先级 只有在相同位置并且模块值都有效的情况下，高优先级先展出
+module-priority: 13
+# 模块为空值 内容为什么的时候模块被判断为空
+module-null-content: " " # 当 module-content: "%PlaceHolder%" 为 " " 时该模块值为空
+# 模块刷新周期 单位ticks
+module-refresh-tick: 10
