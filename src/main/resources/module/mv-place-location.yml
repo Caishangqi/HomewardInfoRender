@@ -1,5 +1,7 @@
 # 模块名称
 module-name: mvPlaceIndicator
+# 模块类型
+module-type: bossbar
 # 模块展示的内容
 module-content: "%PlaceHolder%"
 # 模块位置 x坐标为第几行bossbar y坐标为第几个

@@ -8,15 +8,14 @@ import com.caizii.HomewardInfoRender;
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.InternalStructure;
 import com.comphenix.protocol.events.PacketContainer;
-import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
-import me.clip.placeholderapi.libs.kyori.adventure.bossbar.BossBar;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.boss.BarColor;
-import org.bukkit.boss.BarStyle;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitTask;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.UUID;
@@ -78,8 +77,8 @@ public class MainCommand extends CommandBase {
         PacketContainer packet = protocolManager.createPacket(PacketType.Play.Server.BOSS);
         packet.getModifier().write(0, UUID.randomUUID());
         InternalStructure internalStructure = packet.getStructures().read(1);
-        internalStructure.getChatComponents().write(0,WrappedChatComponent.fromText("Demo Test BossBar"));
-        internalStructure.getFloat().write(0,1F);
+        internalStructure.getChatComponents().write(0, WrappedChatComponent.fromText("Demo Test BossBar"));
+        internalStructure.getFloat().write(0, 1F);
         internalStructure.getEnumModifier(BarColor.class, 2).write(0, BarColor.YELLOW);
         //internalStructure.getEnumModifier(BarStyle.class, 3).write(0, BarStyle.SOLID);
         internalStructure.getModifier().write(4, false);
@@ -91,6 +90,15 @@ public class MainCommand extends CommandBase {
         } catch (InvocationTargetException e) {
             throw new RuntimeException(e);
         }
+
+    }
+
+    @SubCommand("testMultipleThread")
+    public void testMultipleThread(final CommandSender commandSender) {
+        Player player = (Player) commandSender;
+
+
+
 
     }
 

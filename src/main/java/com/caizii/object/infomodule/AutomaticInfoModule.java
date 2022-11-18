@@ -1,4 +1,4 @@
-package com.caizii.object.InfoModule;
+package com.caizii.object.infomodule;
 
 public class AutomaticInfoModule implements InfoModule {
 
@@ -6,13 +6,10 @@ public class AutomaticInfoModule implements InfoModule {
 
     private String moduleName;
 
-    private int[] modulePosition;
-
     private Integer modulePriority;
 
     private String moduleNUllContent;
 
     private Integer moduleRefreshTick;
-
 
 }
