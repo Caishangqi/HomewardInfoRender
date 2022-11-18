@@ -136,6 +136,7 @@ public final class HomewardInfoRender extends JavaPlugin {
     public static HomewardInfoRender getInstance() {
         if (plugin != null) return plugin;
         else throw new RuntimeException("plugin has not been initialized!");
+
     }
 
 }
